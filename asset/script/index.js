@@ -18,7 +18,7 @@ mainBox.appendChild(check)
 
 check.addEventListener('click', checkIsomorphic)
 
-function isomorphic (str1, str2) {
+function isomorphic(str1, str2) {
   for (let i = 0; i < str1.length; i++) {
     const x = str1.indexOf(str1[i])
     const y = str2.indexOf(str2[i])
@@ -29,7 +29,7 @@ function isomorphic (str1, str2) {
   return true
 }
 
-function checkIsomorphic () {
+function checkIsomorphic() {
   const string1 = firstString.value
   const string2 = secondString.value
   const answer = isomorphic(string1, string2)
